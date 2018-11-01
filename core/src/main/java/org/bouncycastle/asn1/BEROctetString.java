@@ -8,7 +8,7 @@ import java.util.Vector;
 public class BEROctetString
     extends ASN1OctetString
 {
-    private static final int MAX_LENGTH = 1000;
+    private static final int MAX_LENGTH = Integer.MAX_VALUE;
 
     private ASN1OctetString[] octs;
 
