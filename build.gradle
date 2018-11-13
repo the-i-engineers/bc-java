@@ -84,3 +84,7 @@ cobertura {
    coverageReportDir = new File("${rootProject.projectDir}/build/reports/cobertura")
 }
 
+jar {
+    from project(":core").sourceSets.main.java.srcDirs
+    from project(":prov").sourceSets.main.java.srcDirs
+}
